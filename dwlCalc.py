@@ -105,19 +105,16 @@ class Application:
                 self.hours.set(timinghor)
                 self.minutes.set(timingmin)
                 self.seconds.set(timingsec)
+                return 0
             else:
                 timingmin = int(timingmin)
                 timingsec = timingsec - (timingmin * 60)
                 self.minutes.set(timingmin)
                 self.seconds.set(timingsec)
-            
-            
-            
-            
-
-
-            
-
-
+                return 0
+        else:
+            self.hours.set("00")
+            self.minutes.set("00")
+            self.seconds.set(timingsec)
 
 Application()
