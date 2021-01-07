@@ -117,4 +117,5 @@ class Application:
             self.minutes.set("00")
             self.seconds.set(timingsec)
 
+
 Application()
